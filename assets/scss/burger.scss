@@ -7,7 +7,6 @@
 	border-left: 1px solid #bfadad4d;
 	width: 63px;
 	justify-content: center;
-	height: 56px;
 	border-right: 1px solid #bfadad4d;
 }
 
@@ -16,7 +15,7 @@
 	display: inline-block;
 	$width: 21px;
 	$thickness: 2px;
-	border: 0;
+	border: 2px;
 	background: none;
 	outline: 0;
 	color: $white;

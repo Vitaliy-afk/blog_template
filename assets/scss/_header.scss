@@ -39,12 +39,12 @@
     //     timing-function: linear;
     //     }
     //     }
-        .burger-active & {
-            @include media('<1023px'){
-                opacity: 1;
-                visibility: visible;
-            }
-        }
+        // .burger-active & {
+        //     @include media('<1023px'){
+        //         opacity: 1;
+        //         visibility: visible;
+        //     }
+        // }
 }
 
 .logo {
@@ -61,11 +61,6 @@
 }
 
 
-// .logo-image {
-//     @include media('<1023px'){
-//         padding: 0;
-//     }
-// }
 
 
 .social {

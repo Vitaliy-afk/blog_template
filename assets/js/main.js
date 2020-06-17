@@ -15,6 +15,8 @@ function initSlickSlider() {
     easing: 'ease',
     infinity: true,
     vertical: true,
+    
+    // autoplaySpeed: 500
     // verticalSwiping: true
     // responsive: [
     //   {
@@ -37,8 +39,34 @@ function initSlickSlider() {
     //     }
     // ]
 
+
+  });
+  jQuery('.slider-section').slick({
+    arrows: true,
+    adaptiveHeight: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    speed: 3000,
+    easing: 'ease',
+    infinity: true,
+    // autoplay: true,
+    // autoplaySpeed: 500
 });
+
+jQuery('.slider-minibox').slick({
+  arrows: true,
+  adaptiveHeight: true,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  speed: 3000,
+  easing: 'ease',
+  infinity: true,
+  // autoplay: true,
+  // autoplaySpeed: 500
+});
+
 }
+
 
 
 function initBurgerMenu() {
@@ -49,23 +77,16 @@ function initBurgerMenu() {
   });
 }
 
+
+
 function initMasonry() {
-  jQuery('.subhead').masonry({
-    gutter: 50
+  jQuery('.grid').masonry({
+    gutter: 55
   });
 }
 
-$('.subhead').masonry({
-  columnWidth: 200,
+$('.grid').masonry({
+  columnWidth: 140,
   itemSelector: '.part',
-  responsive: [
-    {
-    breakpoint: 1024,
-        settings: {
-        columnWidth: 200,
-        itemSelector: '.part',
-        }
-      }
-  ]
 });
 
